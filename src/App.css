@@ -1,10 +1,26 @@
-.App {
-  text-align: center;
+body {
+  overflow-x: hidden;
+  font-family: 'GFS Didot', serif;
+  font-family: "Lato", sans-serif;
 }
 
+body::-webkit-scrollbar {
+  width: 12px; /* Set a width for the scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #d4527d;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #923756; /* Specify the darker color when hovered */
+}
+body::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  color: #ba9f07;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,4 +51,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} 

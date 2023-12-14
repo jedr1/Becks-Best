@@ -1,0 +1,67 @@
+/* MenuIcon.css */
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    margin-left: 150px;
+    z-index: 999;
+    margin-top: 5px;
+  }
+  
+  .bar {
+    width: 30px;
+    height: 4px;
+    background-color: #FF0054;
+    margin: 4px 0;
+    transition: transform 0.3s ease;
+  }
+  
+.bar2 {
+  width: 22.5px;
+  transition: 200ms ease-in-out;
+}
+.bar-hovered {
+  width: 30px;
+}
+  .open .bar:nth-child(1) {
+    width: 27px;
+    transform: rotate(-45deg) translate(-2.5px, 6px);
+  }
+  
+  .open .bar:nth-child(2) {
+    width: 27px;
+    transform: rotate(45deg) translate(-1px, -6px);
+  }
+  
+  .open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+    display: none;
+    
+ 
+  }
+  .move {
+   
+      cursor: pointer;
+      /* tran-out;nsform: translateY(-4px);
+     */
+     height: 26px;
+  }
+  .icon {
+    border-radius: 50%;
+    height: 50px;
+  }
+  .icon:hover {
+    height: 55px;
+  }
+  .p-icon {
+    height: 40px;
+
+  }
+  .p-icon:hover {
+    height: 45px;
+  }
+  .random {
+    color: #ff0055;
+  }

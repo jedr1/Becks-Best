@@ -1,0 +1,28 @@
+.words-container {
+    position: relative;
+    height: 200px;
+    width: 300px;
+    overflow: hidden;
+   }
+   
+   .word {
+    position: absolute;
+    opacity: 0;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+   }
+   
+   .word.visible {
+    transform: translateX(0%);
+    opacity: 1;
+   }
+
+   .parent {
+   overflow-x: visible !important;
+}
+
+.child {
+    
+    background-color: lightblue;
+    padding: 10px;
+    margin-bottom: 10px;
+}

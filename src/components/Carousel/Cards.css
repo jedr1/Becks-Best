@@ -1,0 +1,6 @@
+.right {
+    transform: translateX(5px);
+}
+.left {
+    transform: translateX(-5px);
+}

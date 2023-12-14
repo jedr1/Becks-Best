@@ -1,0 +1,131 @@
+
+.one {
+    animation-name: one;
+    animation-duration: 1s;
+    
+    
+}
+@keyframes one {
+    0% {
+        transform: translateX(-2000px);
+    }
+    100% {
+        transform: translateX(0px)
+    }
+}
+.one-gone {
+    animation-name: one-gone;
+    animation-duration: 1s;
+    
+}
+@keyframes one-gone {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-2000px)
+    }
+}
+
+.two {
+    animation-name: two;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes two {
+    0% {
+        transform: translateX(2000px);
+    }
+    100% {
+        transform: translateX(0px)
+    }
+}
+.two-gone {
+    animation-name: two-gone;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes two-gone {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(2000px)
+    }
+}
+@media screen and (max-width: 600px) {
+    .one{
+        animation-name: one2;
+        animation-duration: 1s;
+    }
+    .two {
+        animation-name: two2;
+        animation-duration: 1s;
+    }
+    
+}
+@keyframes one2 {
+    0% {
+        margin-left: -200px;
+    }
+    100% {
+        margin-left: 0px;
+    }
+}
+@keyframes two2 {
+    0% {
+        margin-left: 200px;
+    }
+    100% {
+        margin-left: 0px;
+    }
+}
+
+
+
+
+
+
+
+.plus-button {
+    width: 40px;
+    height: 40px;
+    
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .horizontal-line,
+  .vertical-line {
+    position: absolute;
+    background-color: #333;
+  }
+  
+  .horizontal-line {
+    width: 60%;
+    height: 5%;
+    top: 35%;
+    left: 37.5%;
+    
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .vertical-line {
+    width: 5%;
+    height: 60%;
+    top: 10%;
+    left: 65%;
+    transition: transform 0.3s ease;
+  }
+  
+   .horrizontal-line.hidden {
+    opacity: 0;
+  } 
+  
+  .plus-button.clicked .horizontal-line {
+    transform: rotate(180deg);
+  }
+  
+  .plus-button.clicked .vertical-line {
+    transform: rotate(90deg);
+  }

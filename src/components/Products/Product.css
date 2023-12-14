@@ -1,0 +1,52 @@
+.marg {
+    margin-bottom: 3px;
+}
+@keyframes up {
+    0% {
+        transform: translateY(400px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.up {
+    animation-name: up;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes down {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(400px);
+    }
+}
+
+.down {
+    animation-name: down;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes title {
+    0% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.title {
+    animation-name: title;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+.zoom {
+    transform: scale(1.1);
+}
+.chev-up {
+    transform: rotate(180deg)
+}

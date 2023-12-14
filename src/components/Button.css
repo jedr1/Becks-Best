@@ -1,0 +1,67 @@
+:root {
+    --primary: rgb(9, 6, 98);
+    --primary: #FF0054;;
+}
+
+.btn {
+    padding: 8px 20px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.btn-blue {
+    padding: 8px 20px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: #FF0054;;
+}
+.btn--primary {
+    background-color: var(--primary);
+    color: #f8f7f7;
+    border: 1px solid var(--primary);
+}
+
+.btn--outline {
+    background-color: transparent;
+    color: rgb(248, 247, 251);
+    padding: 8px 20px;
+    
+    border: 1px solid rgb(248, 247, 251);
+    transition: all 0.3s ease-out;
+    min-width: 250px;
+}
+
+.btn--outline-nav {
+    background-color: transparent;
+    color: rgb(9, 6, 98);
+    padding: 8px 20px;
+    border: 1px solid rgb(248, 247, 251);
+    transition: all 0.3s ease-out;
+}
+.btn--guide {
+    background-color: rgb(4, 3, 46);
+    color: #fff;
+    padding: 8px 20px;
+    border: 1px solid rgb(248, 247, 251);
+    transition: all 0.3s ease-out;
+}
+.btn--medium {
+    padding: 8px 20px;
+    font-size: 20px;
+    max-width: 220px;
+}
+
+.btn--large {
+    padding: 12px 26px;
+    font-size: 20px;
+    min-width: 200px;
+}
+
+.btn--medium:hover, .btn--large:hover {
+    background-color: rgb(250, 251, 252);
+    color: #242424;
+    transition: all 0.3s ease-out;
+}
